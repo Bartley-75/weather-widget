@@ -166,17 +166,23 @@ export class WeatherWidget {
 			.weather-container {
 				display: flex;
 				flex-direction: column;
-				padding: 16px 16px 0;
+				padding: 16px;
 				background: white;
-				overflow-x: auto;
+				width: 100%;  /* Full width */
+				max-width: 100%; /* Prevents overflow issues */
+				box-sizing: border-box; /* Prevents extra padding from affecting width */
 				text-align: center;
-			}	
+			}
+
 			.weather-data-container {
 				display: flex;
 				justify-content: space-between;
 				background: white;
 				border-radius: 10px;
 				overflow-x: auto;
+				width: 100%; /* Make sure it stretches */
+			}
+
 			}
 			.weather-day {
 				text-align: center;
