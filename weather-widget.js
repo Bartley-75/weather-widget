@@ -159,9 +159,9 @@ export class WeatherWidget {
 			}
 			.header {
 				font-weight: 500;
-				font-size: 14px;
+				font-size: 30px;
 				color: rgba(0, 0, 0, 0.9);
-				text-align: left;
+				text-align: center;
 			}	
 			.weather-container {
 				display: flex;
