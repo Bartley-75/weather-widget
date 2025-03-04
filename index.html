@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Widget Demo</title>
+</head>
+<body>
+  <div id="weather-container"></div>
+  
+  <script type="module">
+    import { WeatherWidget } from './weather-widget.js';  
+
+    const weatherWidget = new WeatherWidget({
+      lng: -80.843124,
+      lat: 35.227085,
+      apiKey: "fe7541561660b3924c0c3994084a1d63|c843651518015327bf2658f06975fdd6b1e252444b4bd0435a4ddf92527ec840", 
+      containerId: "weather-container",
+      locationName: "Charlotte, NC",
+      unit: "imperial"
+    });
+    weatherWidget.fetchWeather();
+  </script>
+</body>
+</html>
